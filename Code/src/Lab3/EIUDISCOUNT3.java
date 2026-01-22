@@ -12,7 +12,7 @@ public class EIUDISCOUNT3 {
 
         double online = sc.nextDouble();
         double vip = sc.nextDouble();
-        double superSaiya = sc.nextDouble();
+        double saiya = sc.nextDouble();
 
         for (int i = 0; i < rates.length; i++) {
             if (payments > levels[i]) {
@@ -27,7 +27,7 @@ public class EIUDISCOUNT3 {
         if (vip == 1) {
             afterDiscount *= 0.98;
         }
-        if (superSaiya == 1) {
+        if (saiya == 1) {
             afterDiscount *= 0.98;
         }
         System.out.println((long) afterDiscount);
