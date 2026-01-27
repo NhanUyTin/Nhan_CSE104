@@ -8,12 +8,12 @@ public class EIAUCTION {
         int n = sc.nextInt();
         int[] arr = new int[n];
         int[] count = new int[7];
-        
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
             count[arr[i]]++;
         }
         int winner = -1;
+        //tim so duy nhat trong arr
         for (int v = 6; v >= 1; v--) {
             if (count[v] == 1) {
                 winner = v;
