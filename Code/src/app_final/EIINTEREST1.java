@@ -9,7 +9,8 @@ public class EIINTEREST1 {
         double n = 0;
         for (int i = 1; i <= 12; i++) {
             double moneyIn = sc.nextDouble();
-            n = (n + moneyIn) * (1 + rate);
+            int month = 12 - i;
+            n = n + moneyIn * Math.pow(1 + rate, month);
         }
         System.out.println(Math.round(n));
 
